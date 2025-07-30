@@ -1,0 +1,70 @@
+create database placement_training;
+use placement_training;
+create table CSE(RNO int, Name varchar(50), Email varchar(50), Mentor varchar(50));
+desc computer;
+alter table cse add mobile_number long;
+alter table cse drop mobile_number;
+alter table cse rename to computer;
+alter table computer rename column RNO to Roll_No;
+insert into computer values(1,'Anand','anandhakumarak75@gmail.com','Karthik');
+select * from computer;
+alter table computer add date_of_joining_in_college date;
+select * from computer;
+insert into computer values(2,'Barani','baranikeshava@gmail.com','Sridhar','2025-07-30');
+update computer set date_of_joining_in_college = '2025-03-20' where Roll_No = 1;
+
+-- for updating the all the values in the table-- 
+set SQL_SAFE_UPDATES=0;
+
+use placement_training;
+insert into computer values(3,'Bharathi','baranikeshava@gmail.com','Sridhar','2025-07-30'),
+(4,'Ajay','baranikeshava@gmail.com','Sridhar','2025-07-30');
+
+-- truncate-- 
+-- truncate table_name;-- 
+-- between, in ->(if we use the in we should use the '()' ), like->( (H% -> what name start with h it will display),(%h-> it will display which name end with h) ),-- 
+
+
+select * from computer where name like "A%";
+
+delete from computer where Roll_No = 4;
+
+select * from computer where Roll_No in(1,3);
+
+select * from computer where Roll_No Not in(1,3);
+
+select * from computer where name like "%i";
+
+alter table computer drop column date_of_joining_in_college;
+
+alter table computer add age int;
+
+update computer set age = 20;
+
+select * from computer;
+
+update computer set age = 21 where Roll_No = 2;
+
+select * from computer where age between 20 and 30;
+
+
+
+-- (order by) means it will diplay in orderly--
+-- keywords -> (ASC,desc,limit )
+
+select * from computer order by age;
+
+select * from computer order by age desc;
+
+select * from computer order by age limit 2;
+
+select * from computer order by(case age
+when 20 then 2
+when 21 then 1
+else 0 end);
+
+
+
+-- Group by ->( remove the duplicates ) -- 
+-- keywords used with group by -> (Having)
+select age from computer group by age having age = 20;
