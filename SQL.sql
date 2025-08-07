@@ -1,17 +1,35 @@
 create database placement_training;
 use placement_training;
-create table CSE(RNO int, Name varchar(50), Email varchar(50), Mentor varchar(50));
+CREATE TABLE CSE (
+    RNO INT,
+    Name VARCHAR(50),
+    Email VARCHAR(50),
+    Mentor VARCHAR(50)
+);
 desc computer;
 alter table cse add mobile_number long;
 alter table cse drop mobile_number;
 alter table cse rename to computer;
 alter table computer rename column RNO to Roll_No;
 insert into computer values(1,'Anand','anandhakumarak75@gmail.com','Karthik');
-select * from computer;
+SELECT 
+    *
+FROM
+    computer;
+    
 alter table computer add date_of_joining_in_college date;
-select * from computer;
-insert into computer values(2,'Barani','baranikeshava@gmail.com','Sridhar','2025-07-30');
-update computer set date_of_joining_in_college = '2025-03-20' where Roll_No = 1;
+
+SELECT 
+    *
+FROM
+    computer;
+    
+insert into compute values(2,'Barani','baranikeshava@gmail.com','Sridhar','2025-07-30');
+UPDATE computer 
+SET 
+    date_of_joining_in_college = '2025-03-20'
+WHERE
+    Roll_No = 1;
 
 -- for updating the all the values in the table-- 
 set SQL_SAFE_UPDATES=0;
@@ -227,3 +245,7 @@ grant select, insert on placement_training.* to 'newuser';
 
 -- REVOKE
 revoke select, insert on placement_training.* from 'newuser';
+
+
+-- TCL
+-- commit, rollback, savepoint, begin
