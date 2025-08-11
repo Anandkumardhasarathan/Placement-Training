@@ -1,0 +1,78 @@
+<!-- html login page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            font-family: Arial, sans-serif;
+            margin-top: 15%;
+        }
+        .login-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid;
+            border-color: darkslategray;
+            border-radius: 12px;
+        }
+        input{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 12px;
+            border: 1px solid darkslategray;
+        }
+        input[type="text"] {
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+        input[type="password"] {
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+
+        input[type="submit"]{
+            background-color: darkslategray;
+            color: white;
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 12px;
+            border: 1px solid darkslategray;
+            background-color: darkslategray;
+            color: white;
+        }
+
+        button:hover{
+            background-color: darkcyan;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        
+        <center>
+            <h2>Login to Your Account</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                
+            </form>
+            <a href="home.html"><button >Login</button></a>
+            <a><button>Cancel</button></a>
+            <br>
+            <p>Don't have an account? <a href="signup.html">Register here</a></p>
+        </center>
+    </div>
+</body>
+</html>

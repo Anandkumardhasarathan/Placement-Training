@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            font-family: Arial, sans-serif;
+            margin-top: 10%;
+        }
+
+        .registration-container{
+            padding: 30px;
+            border: 1px solid darksalmon;
+            width: 400px;
+            margin: auto;
+            border-radius: 12px;
+            background-color: antiquewhite;
+        }
+
+         input{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 12px;
+            border: 1px solid darkslategray;
+        }
+        input[type="text"] {
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+        input[type="password"] {
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+        input[type="number"] {
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+        input[type="date"] {
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+        input[type="email"] {
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+
+        input[type="submit"]{
+            background-color: darkslategray;
+            color: aqua;
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 12px;
+            border: 1px solid darkslategray;
+            background-color: darkslategray;
+            color: white;
+        }
+
+        button:hover{
+            background-color: darkcyan;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <center>
+            <h2>Registraion Form</h2>
+            <br>
+            <form action="">
+                <label for="">Name : </label>
+                <input type="text" name="name" required/>
+                <br><br>
+                <label for="">Age : </label>
+                <input type="number" name="age" required/>
+                <br><br>
+                <label for="">Date of Birth : </label>
+                <input type="date" name="dob" required/>
+                <br><br>
+                <label for="">Email ID : </label>
+                <input type="email" name="email" required/>
+                <br><br>
+                <label for="">Password : </label>
+                <input type="password" name="password" required/>
+                <br><br>
+            </form>
+            <a href="home.html"> <button>Register</button></a>
+            <button type="reset">Cancel</button>
+            <br><br>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </center>
+    </div>
+</body>
+</html>

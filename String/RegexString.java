@@ -104,6 +104,7 @@ public class RegexString {
 }
 
 
+
 //Common Regex Patterns (Cheat Sheet)
 // | Pattern  | Meaning                            | Example Match              |            |
 // | -------- | ---------------------------------- | -------------------------- | ---------- |

@@ -3,7 +3,7 @@
 public class primeNumber {
     public static void main(String[] args) {
         int n = 9973;
-        if(n%2==0 && n!=2 || n%3==0 && n!=3 || (n%5) ==0 && n!=5){
+        if(n%2==0 && n!=2 || n%3==0 && n!=3 || (n%5) == 0 && n!=5){
             System.out.println("not a prime ");
         }
         //  below (i*i) -> help to reduce the iterations

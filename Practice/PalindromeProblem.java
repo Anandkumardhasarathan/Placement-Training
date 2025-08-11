@@ -13,6 +13,6 @@ public class PalindromeProblem {
             sum = sum*10+digit;
             n=n/10;
         }
-        System.err.println((originalNum==sum)?("Palindrome for this number "+originalNum+" is : "+sum):"Not a Palindrome Number");
+        System.out.println((originalNum==sum)?("Palindrome for this number "+originalNum+" is : "+sum):"Not a Palindrome Number");
     }
 }

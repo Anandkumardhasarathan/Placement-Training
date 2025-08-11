@@ -1,0 +1,34 @@
+ body{
+     background-color: blanchedalmond;
+ }
+ .Header {
+     text-align: center;
+     color: dimgrey;
+     font-family: Arial, sans-serif;
+     font-size: 40px;
+     line-height: 1.5;
+ }
+ dl {
+     margin: 20px;
+     padding: 10px;
+     border: 2px solid darkslategray;
+     border-radius: 10px;
+     background-color: peachpuff;
+ }
+ .java-course {
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-between;
+ }
+ .java-text {
+     flex: 1;
+ }
+ .java-img {
+     margin-left: 30px;
+ }
+ img{
+     border-radius: 10px;
+ }
+ .footer {
+     text-align: center;
+ }
