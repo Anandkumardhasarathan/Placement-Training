@@ -12,3 +12,8 @@
 body{
     background-image: url('bg.jpeg');
 }
+
+.car{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
