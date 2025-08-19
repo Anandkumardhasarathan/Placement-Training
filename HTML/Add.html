@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+</head>
+<body>
+     <input type="text" id="inputtag">
+    <input type="text" id="inputtag2">
+    <h1 id="display"></h1>
+    <button onclick="sum()">Add</button>
+
+    <script>
+        function sum(){
+            let k = document.getElementById("inputtag");
+            let k1 = document.getElementById("inputtag2");
+            let v = k.value;
+            let v1 = k1.value;
+            let answer = Number(v)+Number(v1);
+            document.getElementById("display").innerText=answer;
+        }
+    </script>
+</body>
+</html>

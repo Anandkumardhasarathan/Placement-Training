@@ -10,6 +10,7 @@
             font-family: Arial, sans-serif;
             border: 1px solid black;
             padding-bottom: 20vh;
+            border-radius: 10px;
         }
         .head{
             background-color: rgb(168, 158, 145);
@@ -22,13 +23,23 @@
             justify-content: space-around;
             flex-wrap: wrap;
         }
-        .car1, .car2, .car3 {
+        .car1, .car2, .car3, .car4, .car5, .car6 {
             border: 2px solid darkslategray;
             border-radius: 10px;
             padding: 30px;
             background-color: antiquewhite;
             text-align: center;
             box-shadow: -4px -4px 10px black, 4px 4px 10px black;
+        }
+
+        .car4, .car5, .car6 {
+            margin-top: 40px;
+            margin-bottom: -40px;
+        }
+        .car1:hover, .car2:hover, .car3:hover, .car4:hover, .car5:hover, .car6:hover {
+            box-sizing: border-box;
+            transform: scale(1.05);
+            transition: transform 0.3s ease-out;
         }
         button{
             padding: 10px;
@@ -37,8 +48,7 @@
         }
         button :hover{
             background-color: aqua;
-            color: black;
-            
+            color: black;            
         }
 
 
@@ -54,20 +64,39 @@
             <img src="car1.jpg" alt="car1" width="400px" height="300px">
             <h3 style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">Audi A4</h3>
             <p style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">Price: 20000/day</p>
-            <a href="sample2.html" target="_blank"><button style="background-color: antiquewhite; border-radius: 10px;">Book Now</button></a>
+            <a href="booknow.html" target="_blank"><button style="background-color: antiquewhite; border-radius: 10px;">Book Now</button></a>
         </div>
         <div class="car2">
             <img src="car2.jpg" alt="car2"  width="400px" height="300px">
             <h3 style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">Ferari</h3>
             <p style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">Price : 30000/day</p>
-            <a href="sample2.html" target="_blank"><button style="background-color: antiquewhite; border-radius: 10px;">Book Now</button></a>
+            <a href="booknow.html" target="_blank"><button style="background-color: antiquewhite; border-radius: 10px;">Book Now</button></a>
  
        </div>
         <div class="car3">
             <img src="car4.jpeg" alt="car3" width="400px" height="300px">
             <h3 style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">Porsche</h3>
             <p style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">price : 30000/day</p>
-            <a href="sample2.html" target="_blank"><button style="background-color: antiquewhite; border-radius: 10px; justify-content: center;text-align: center;">Book Now</button></a>
+            <a href="booknow.html" target="_blank"><button style="background-color: antiquewhite; border-radius: 10px; justify-content: center;text-align: center;">Book Now</button></a>
+        </div>
+        <div class="car4">
+            <img src="car1.jpg" alt="car1" width="400px" height="300px">
+            <h3 style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">Audi A4</h3>
+            <p style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">Price: 20000/day</p>
+            <a href="booknow.html" target="_blank"><button style="background-color: antiquewhite; border-radius: 10px;">Book Now</button></a>
+        </div>
+        <div class="car5">
+            <img src="car2.jpg" alt="car2"  width="400px" height="300px">
+            <h3 style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">Ferari</h3>
+            <p style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">Price : 30000/day</p>
+            <a href="booknow.html" target="_blank"><button style="background-color: antiquewhite; border-radius: 10px;">Book Now</button></a>
+ 
+       </div>
+        <div class="car6">
+            <img src="car4.jpeg" alt="car3" width="400px" height="300px">
+            <h3 style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">Porsche</h3>
+            <p style="font-size: 1rem;font-family: Arial, Helvetica, sans-serif; text-align: center;justify-content: center;">price : 30000/day</p>
+            <a href="booknow.html" target="_blank"><button style="background-color: antiquewhite; border-radius: 10px; justify-content: center;text-align: center;">Book Now</button></a>
         </div>
         </div>
     </div>

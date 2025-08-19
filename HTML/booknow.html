@@ -1,0 +1,101 @@
+<!-- html login page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Booking Form</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+        }
+         .head{
+            background-color: rgb(168, 158, 145);
+            padding: 20px;
+            margin: 1vh;
+            margin-bottom: 100px;
+        }
+        .form-container {
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid darkslategray;
+            border-radius: 12px;
+            background-color: blanchedalmond;
+        }
+        input{
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid darkslategray;
+        }
+        input[type="text"] {
+            background-color: antiquewhite;
+            cursor: pointer;
+               border: none;
+            outline: none;
+            background: none;
+            border-bottom: 2px solid black;
+        }
+        input[type="date"] {
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+
+        input[type="submit"]{
+            background-color: darkslategray;
+            color: white;
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 12px;
+            border: 1px solid rgb(236, 255, 255);
+            background-color: #D4AF37;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: darkcyan;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <div class="head">
+            <h1 align = "center">AK Foreign Car Rental Service</h1>
+        </div>
+    <div class="form-container">
+        
+        <center>
+            <h2>Car Rental Booking Form</h2>
+            <form>
+                <label for="">Name</label>
+                <input type="text" placeholder="Enter your name" required>
+                <br>
+                <label for="">Email</label>
+                <input type="text" placeholder="Enter your email" required>
+                <br>
+                <label for="">Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" required>
+                <br>
+                <label for="">Car Number</label>
+                <input type="text" placeholder="Enter car Number" required>
+                <br>
+                <label for="">Car Model</label>
+                <input type="text" placeholder="Enter car Model" required>
+                <br>
+                <label for="">Duration</label>
+                <input type="text" placeholder="Enter rental duration (days)" required>
+                <br>
+                <label for="">Date of Renting Car</label>
+                <input type="date" placeholder="Enter date of Renting Car" required>
+                <br>
+                <input type="submit" value="Book Now">               
+            </form>
+        </center>
+    </div>
+</body>
+</html>
