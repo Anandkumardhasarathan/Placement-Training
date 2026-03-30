@@ -1,4 +1,3 @@
-package Leetcode;
 
 public class stringOdd {
     public static void main(String[] args) {

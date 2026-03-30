@@ -1,5 +1,3 @@
-package Leetcode;
-
 import java.util.Arrays;
 
 public class validAnagram {
@@ -30,9 +28,6 @@ public class validAnagram {
         }
         System.out.println(equal);
 
-    }
-
-        
-        
+    }        
  }   
 }

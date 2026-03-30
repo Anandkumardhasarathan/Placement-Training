@@ -1,4 +1,3 @@
-package Leetcode;
 import java.util.*;
 public class mergersortarray {
     public static void main(String[] args) {
